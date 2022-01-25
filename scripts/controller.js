@@ -11,7 +11,7 @@ for(var ind=0;ind<buttons.length;ind++)
 function allot(button)
 {
     
-    if(button.innerHTML!=whiteSpace)   return;
+    if(button.innerHTML!=whiteSpace  ||  checkWin(buttons))   return;  //reomved double mark
     
     button.innerHTML=player ? 'O':'X';
     
