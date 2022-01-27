@@ -35,4 +35,22 @@ function checkWin(buttons)
     {
         return buttons[2].innerHTML;
     }
+    
+    if(isDraw(buttons))
+    {
+        return "draw";
+    }
+}
+
+function isDraw(buttons) {
+// var whiteSpace=' '
+    
+    for (let ind = 0; ind < buttons.length; ind++) {
+        if(buttons[ind].innerHTML===whiteSpace)
+        {
+            return false;
+        }
+    }
+    
+    return true;
 }

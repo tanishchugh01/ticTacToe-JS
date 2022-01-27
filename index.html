@@ -7,14 +7,17 @@
     <title>Tic-Tac-Toe</title>
     <script defer src="scripts/model.js"></script>
     <script defer src="scripts/controller.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>TIC TAC TOE</h3>
-    <div><button>&emsp;</button> <button>&emsp;</button> <button>&emsp;</button></div>
-    <div><button>&emsp;</button> <button>&emsp;</button> <button>&emsp;</button></div>
-    <div><button>&emsp;</button> <button>&emsp;</button> <button>&emsp;</button></div>
-    <div id="currentIndicatorDiv">Current Marker: <span id="currentPlayer">O</span></div>
-    <div id="winner"></div>
-    <input type="button" value="Reset" id="reset" style="display: none;">
+    <div class="title">TIC TAC TOE</div>
+    <div class="buttons">
+    <div><button>&emsp;</button><button>&emsp;</button><button>&emsp;</button></div>
+    <div><button>&emsp;</button><button>&emsp;</button><button>&emsp;</button></div>
+    <div><button>&emsp;</button><button>&emsp;</button><button>&emsp;</button></div>
+    </div>
+    <div class="info" id="currentIndicatorDiv">Current Marker: <span id="currentPlayer">O</span></div>
+    <div class="info" id="winner"></div>
+    <input type="button" value="Reset" id="reset">
 </body>
 </html>
